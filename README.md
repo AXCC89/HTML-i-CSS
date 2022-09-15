@@ -1,7 +1,1 @@
-# HTML-i-CSS
-En aquesta pràctica hauràs de fer un Layout que ha de funcionar tant en escriptori, com mòbil i tauleta.
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: violet;
-  }
-}
+A partir del wireframe que t'aportem en format .png, hauràs de fer la maquetació en format escriptori. És indiferent els colors escollits, però sí que és molt important que facis l'estructura de caixes que t'indiquem.
