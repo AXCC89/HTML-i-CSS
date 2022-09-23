@@ -1,174 +1,157 @@
 *{
     box-sizing: border-box;
 }
-@media (max-width:320px){
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    header{
-        display: flex;
-        flex-direction:column ;
-        text-align:center;
-        flex: auto;
-        background-color: darkgrey;
-        border: 2px;
-        border-color: black;
-        border-style: solid;
-        color: red;
-        text-decoration: none;
-        padding: 10px 20px 5px ;
-        text-align: center;
-    
-    }
-    header h1{
-        color: red;
-        padding: 10px 145px;
-        text-decoration: none;
-        border-style: solid;
-    }
-    nav{
-        background-color: darkgrey;
-        border: 2px;
-        border-color: black;
-        border-style: solid;
-        color: red;
-        padding: 5px;
-        text-align: center;
-    }
-    
-    .row{
-        display: flex;
-        flex-direction: column;
-    
-    }
-    
-    aside{
-        display: flex;
-        flex-direction:column;
-        flex: 70%;
-        background-color:darkgrey;
-        padding: 20px;
-        border: 2px;
-        border-color: black;
-        border-style: solid;
-        text-align: center;
-    }
-    aside h2{
-        color: red;
-        padding: 10px 145px;
-        text-decoration: none;
-        text-align: center;
-        text-justify: newspaper;
-    }
-    aside p{
-        color: blue;
-        padding:10px 20px;
-        text-justify: newspaper;
-    
-    }
-    section{
-        flex:30px;
-        background-color: darkgrey;
-        padding: 20px;
-        border: 2px;
-        border-color: black;
-        border-style: solid;
-        text-align: center;
-    }
-    footer{
-        display: flex;
-        flex-direction:column;
-        padding: 5px;
-        text-align: center;
-        background-color: yellow;
-        border: 2px;
-        border-color: black;
-        border-style: solid;
-    }
-  
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 1px;
     padding: 0;
+} 
+@media screen and (max-width: 480px){
+header{
+    display: flex;
+    flex-direction: column !important;
+    border: 40px solid black !important;
+    padding: 50px !important;
+}
+.square{
+    width: 100% !important;
+    height: 50px !important;
+}
+.rectangle{
+    width: 100% !important;
+    height: 50px !important;
+}
+nav{
+    border: 40px solid black !important;
+    background-color: orange !important;
+    padding: 50px !important;
+}
+.rectangle2{
+    width: 100% !important;
+    border: 0px  solid  orange !important;
+    margin: 10px;
+    height: 50px !important;
+}
+.row{ 
+    display: flex;
+    flex-direction: column;
+    border: 20px  solid  yellow !important;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    border:none !important;
+    padding: 50px !important;
+    border: 20px  solid  yellow !important;
+}
+.rectangle4{
+    width: 100% !important;
+    height: 60px !important;
+    margin: 10px !important;
+}
+.rectangle5{
+    width: 100% !important;
+    height: 60px !important;
+    margin: 10px !important; 
+}
+section {
+    display: flex;
+    flex-direction: column;
+    border:none !important;
+    padding: 50px !important;
+    border: 20px  solid  yellow !important;
+}
+.rectangle6{
+    background-color: orange !important;
+}
+footer {
+    border: 40px solid black !important;
+    padding: 50px !important;
+}
 }
 header{
     display: flex;
-    flex-direction:row ;
-    text-align:center;
-    flex: auto;
-    background-color: darkgrey;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    color: red;
-    text-decoration: none;
-    padding: 10px 20px 5px ;
-    text-align: center;
-
+    flex-direction: row;
+    background-color: #555;
+    border: 10px solid black;
+    border-bottom: 0px;
+    padding: 0px;
 }
-header h1{
-    color: red;
-    padding: 10px 145px;
-    text-decoration: none;
-    border-style: solid;
+.square {
+ width: 20%;
+ height: 30px;
+ background: red;
+ margin: 10px;
+}
+.rectangle {
+ width: 80%;
+ height: 30px;
+ background: red;
+ margin: 10px;
 }
 nav{
-    background-color: darkgrey;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    color: red;
-    padding: 5px;
-    text-align: center;
+border: 10px solid black;
+background-color: #555;
+padding: 0px;
 }
+.rectangle2 {
+display:flex;
+flex-direction:column;
+ width: 100%;
+ height: 50px;
+ background: yellow;
+ border: 10px solid orange;
 
+}
 .row{
     display: flex;
-    flex-direction: row;
-
+    flex-wrap: wrap-reverse;
 }
-
 aside{
+    flex:65%;
     display: flex;
-    flex-direction:initial;
-    flex: 70%;
-    background-color:darkgrey;
-    padding: 20px;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    text-align: center;
+    flex-wrap: wrap;
+    background-color:grey;
+    border: 10px solid black;
+    padding: 10px;
+
 }
-aside h2{
-    color: red;
-    padding: 10px 145px;
-    text-decoration: none;
-    text-align: center;
-    text-justify: newspaper;
+.rectangle4 {
+display:flex;
+flex-direction:column;
+ width: 50%;
+ height: 50px;
+ background: blue;
+ border: 5px solid grey;
 }
-aside p{
-    color: blue;
-    padding:10px 20px;
-    text-justify: newspaper;
+.rectangle5 {
+display:flex;
+flex-direction:wrap;
+ width: 100%;
+ height: 50px;
+ background: skyblue;
+ border: 5px solid grey;
 
 }
 section{
-    flex:30px;
-    background-color: darkgrey;
-    padding: 20px;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    text-align: center;
+    flex:35%;
+    background-color: red;
+    border: 10px solid black;
+    padding: 10px;
+
+}
+.rectangle6 {
+display:flex;
+flex-direction:wrap;
+ width: 100%;
+ height: 50px;
+ background: lightgoldenrodyellow;
+ border: 5px solid red;
+ margin: 0px
 }
 footer{
-    padding: 5px;
-    text-align: center;
-    background-color: yellow;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
+    width: 100%;
+    height: 50px;
+    background-color: gold;
+    border: 10px solid black;
 }
