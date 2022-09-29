@@ -37,7 +37,7 @@ echo "Las varibles son: ".$x," y ". $y, " ", ", el resultado de la suma es ".($x
 
   $personas = array (1,2,3,4,5);
   $coches = array (6,7,8);
-  array_push($coches[9]);
+  $coches[]=9;
   print_r($coches);
   $sum = array_merge($personas, $coches);
   $sumtotal = array_sum($sum);
