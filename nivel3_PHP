@@ -1,0 +1,6 @@
+//Exercici 1
+
+$entrada1 = 'H e l l o w o r l d';
+print_r(explode(' ', $entrada1));
+
+//Exercici 2
