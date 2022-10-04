@@ -1,0 +1,52 @@
+- Exercici 1
+//HTML
+
+<form method='GET' action="edad.php">
+   Edad:
+   <input type="number" name="edad" size="10">
+   <br><br>
+   <input type = "submit" value="Aceptar"/>
+</form>
+
+//PHP
+
+<?php
+$edad = $_GET['edad'];
+    if(is_numeric($_GET['edad'])){
+        if($_GET['edad']% 2 == 0)
+             echo "<H1> ". $edad ." es par</H1>";
+        else
+             echo "<H1> ". $edad ." es impar</H1>";
+     }
+    else
+       echo "Solo se permiten valores númericos para el campo edad";
+ ?>
+ 
+ - Exercici 2
+//HTML
+
+ <form method='GET' action="numero.php">
+   Colocar un valor para jugar: 
+   <input type="number" name="numero" size="10">
+   <br><br>
+   <input type = "submit" value="Aceptar"/>
+</form>
+
+//PHP
+
+<?php
+
+       $numero =  $numero = $_GET['numero'] ;
+       for ( $i = $numero; $i <= 10; $i++ ) {
+           if ($i > 10 ) {
+               break;
+           }
+           echo $i;
+           $i++;
+        }
+ ?>
+
+ - Exercici 3
+
+ 
+ 
