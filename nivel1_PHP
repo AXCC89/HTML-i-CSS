@@ -1,5 +1,5 @@
 //Ejercicio 1
-
+<?php
 $personas = 10;
 $salary = 1.1;
 $nameUser = "Andrea";
@@ -9,18 +9,20 @@ $performance = ($workshops = 0) ? "no":"si";
 
 echo "Trabaja con nosotros ".$nameUser," tiene un sueldo de ".$salary, " es parte de nuestro equipo de " .$personas,
 " ella ha realizado talleres ".$performance;
-
+ ?>
 //Ejercicio 2
-
+<?php
 $saludos = "hello word!";
 $curso = "Aquest és el curs de PHP";
 echo strtoupper($saludos),"  ", strlen ($saludos),"  ", strrev ($saludos),"  ", ($saludos.$curso);
-
+ ?>
 //Ejercicio 3
+<?php
 define("ANDREA");
 echo "<h1>ANDREA</h1>";
-
+ ?>
 //Ejercicio 4
+<?php
 $x= 1;
 $y= 2;
 $n= 1.1;
@@ -32,8 +34,9 @@ echo "Las varibles son: ".$x," y ". $y, " ", ", el resultado de la suma es ".($x
 , " ", ", el resultado del módulo es ".($n-$m), ". El valor del doble de cada variable: ".($x*2)," , ".($y*2)," , ".($n*2)," , ".($m*2),
 ". El resultado de la suma de todas las variables: ".($x+$y+$n+$m), ", el resultado del producto de todas las variables: "
 .($x*$y*$n*$m);
-
+ ?>
 //Ejercicio 5
+<?php
 
   $personas = array (1,2,3,4,5);
   $coches = array (6,7,8);
@@ -43,3 +46,4 @@ echo "Las varibles son: ".$x," y ". $y, " ", ", el resultado de la suma es ".($x
   $sumtotal = array_sum($sum);
   print_r($sum);
   print_r($sumtotal);
+ ?>
