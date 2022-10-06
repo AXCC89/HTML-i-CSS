@@ -1,5 +1,21 @@
 //Exercici 1
 
+//PHP-index
+
+<?php
+$employee = new Employee();
+ 
+$employee->setNombre('Ana');
+$employee->setApellido('Perez');
+$employee->setSueldo(1000);
+ 
+print $employee->getNombre(); 
+print $employee->getApellido(); 
+print $employee->getSueldo();
+print $employee->Impuesto();
+?>
+
+//PHP-employee
 <?php
 class Employee
 {
@@ -42,21 +58,12 @@ public function setSueldo($apellido)
 {
   $this->sueldo = $sueldo;
 }
+//general
 public function Impuesto()
 {
   echo ($this->sueldo ? '6000':false?'Paga impuestos':'No paga impuestos.')
 }
  
-$employee = new Employee();
- 
-$employee->setNombre('Ana');
-$employee->setApellido('Perez');
-$employee->setSueldo(1000);
- 
-echo $employee->getNombre(); 
-echo $employee->getApellido(); 
-echo $employee->getSueldo();
-echo $employee->Impuesto();
 ?>
 
 //Exercici 2
