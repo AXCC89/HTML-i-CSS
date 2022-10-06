@@ -1,3 +1,4 @@
+<?php
 //Exercici 1
 //1,2
 $num1 = 1;
@@ -65,3 +66,4 @@ $patterns[0] = '/ab/';
 $replacements = array();
 $replacements[0] = 'ba';
 echo preg_replace($patterns, $replacements, $stringB);
+ ?>
