@@ -1,6 +1,3 @@
-//Exercici 1
-
-//PHP-index
 
 <?php
 $employee = new Employee();
@@ -65,5 +62,3 @@ public function Impuesto()
 }
  
 ?>
-
-//Exercici 2
